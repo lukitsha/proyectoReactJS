@@ -1,8 +1,6 @@
-# React + Vite
+#   Proyecto ReactJS Luca Gaido
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto esta siendo realizado durante el cursado de la comision #54045 de ReactJS en Coder House
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+En el mismo se busca dejar constancia del conocimiento y el correcto uso y manipulacion de los conceptos enseñados en clase.
+No se busca un proyecto agradable visualmente, si no mas bien un codigo funcional.
