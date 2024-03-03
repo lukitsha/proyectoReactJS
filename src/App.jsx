@@ -1,7 +1,7 @@
 
 import Navbar from "./components/Navbar/Navbar"
 import ListadoCategorias from "./components/ListadoCategorias/ListadoCategorias"
-import Button from "./components/Button/Button"
+
 
 function App() {
     
