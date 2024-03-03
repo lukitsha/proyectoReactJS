@@ -1,8 +1,12 @@
-import shoppingcart from './assets/shoppingcart.svg'
+import shoppingcart from './assets/shoppingcart.png'
+
 
 const CartWidget = () => {
     return(
-        <img src={shoppingcart} />
+        <button>
+            <img src={shoppingcart} />
+            17
+        </button>
     )
 }
 
