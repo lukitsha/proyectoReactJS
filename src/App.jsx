@@ -1,6 +1,7 @@
 
 import Navbar from "./components/Navbar/Navbar"
 import ListadoCategorias from "./components/ListadoCategorias/ListadoCategorias"
+import Button from "./components/Button/Button"
 
 function App() {
     
@@ -12,6 +13,8 @@ function App() {
       <h3>Electronic Wharehouse</h3>
       <br />
       <ListadoCategorias/>
+      
+      
     </>
   )
 }
