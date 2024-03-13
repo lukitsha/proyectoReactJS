@@ -3,9 +3,9 @@ const products = [
     {
         id: '1',
     
-        name: 'RTX 3080ti',
+        name: 'RTX 3080 ti',
     
-        price: 'U$D 950',
+        price: '950',
     
         category: 'Placas de Video',
     
@@ -19,9 +19,9 @@ const products = [
     {
         id: '2',
     
-        name: 'RTX 4060ti',
+        name: 'RTX 4060 ti',
     
-        price: 'U$D 1250',
+        price: '1250',
     
         category: 'Placas de Video',
     
@@ -35,9 +35,9 @@ const products = [
     {
         id: '3',
     
-        name: 'RTX 4070 super',
+        name: 'RTX 4070 Super',
     
-        price: 'U$D 1600',
+        price: '1600',
     
         category: 'Placas de VIdeo',
     
@@ -53,7 +53,7 @@ const products = [
     
         name: 'RTX 4090',
     
-        price: 'U$D 2300',
+        price: '2300',
     
         category: 'Placas de Video',
     
