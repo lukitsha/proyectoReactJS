@@ -21,7 +21,7 @@ const products = [
     
         name: 'RTX 4060ti',
     
-        price: '1250',
+        price: 'U$D 1250',
     
         category: 'Placas de Video',
     
@@ -37,7 +37,7 @@ const products = [
     
         name: 'RTX 4070 super',
     
-        price: '1600',
+        price: 'U$D 1600',
     
         category: 'Placas de VIdeo',
     
@@ -53,7 +53,7 @@ const products = [
     
         name: 'RTX 4090',
     
-        price: '2300',
+        price: 'U$D 2300',
     
         category: 'Placas de Video',
     
@@ -68,6 +68,9 @@ const products = [
 
 export const getProducts = () => {
     return new Promise((resolve) => {
-        resolve(products)
-    }, 500)
+        setTimeout(() => {
+            resolve(products)
+        }, 500)
+           
+    })
 }

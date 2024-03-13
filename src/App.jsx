@@ -12,7 +12,7 @@ function App() {
       <ItemListContainer greeting='Bienvenidos al Almacen Vitrual' />
       <h1>Lekets Electronics</h1>
       <h3>Electronic Wharehouse</h3>
-      <br />
+      
       <ListadoCategorias/>
       
       
