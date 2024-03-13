@@ -1,14 +1,12 @@
+import Item from "../Item/Item"
+
 const ItemList = ( {products} ) => {
     return (
-        <div>
+        <div style={{display: 'flex'}}>
             {
                 products.map(product =>{
                     return (
-                        <div key={product.id}>
-                            <h2>{product.name}</h2>
-                            <img src={product.img} style={{ width: 175 }}/>
-                            <h3>Precio: U$D {product.price}</h3>
-                        </div>
+                        <Item key={product.id} {...product}/>
                     )       
                 })
             } 
