@@ -1,0 +1,30 @@
+.CardItem {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  .Header {
+    text-align: center;
+  }
+  
+  .ItemHeader {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .ItemImg {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .Info {
+    margin-bottom: 5px;
+  }
+  
+  .ItemFooter {
+    margin-top: 20px;
+    text-align: center;
+  }

@@ -139,6 +139,14 @@ export const getProducts = () => {
     })
 }
 
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 777)
+    })
+}
+
 export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
