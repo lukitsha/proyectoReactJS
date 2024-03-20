@@ -1,22 +1,31 @@
 
+import { useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import ListadoCategorias from "./components/ListadoCategorias/ListadoCategorias"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailConteiner"
 
-function App() {
+const App = () => {
+  const [page, setPage] = useState('list')
     
 
   return (
-    <>
+    <div className="App">
+
       <Navbar/>
-      <ItemListContainer greeting='Bienvenidos al Almacen Vitrual' />
+      
       <h1>Lekets Electronics</h1>
       <h3>Electronic Wharehouse</h3>
       
-      <ListadoCategorias/>
+      { page === 'list' && <ItemListContainer greeting='Bienvenidos al Almacen Vitrual' /> }
+      { page === 'detail' && <ItemDetailContainer /> }
+      
+      <ListadoCategorias />
       
       
-    </>
+      
+      
+    </div>
   )
 }
 
