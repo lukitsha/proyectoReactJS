@@ -63,6 +63,38 @@ const products = [
     
         description: 'NVIDIA® GeForce RTX® 4090 es la GPU GeForce definitiva. Brinda un gran salto en rendimiento, eficiencia y gráficos impulsados ​​​​por IA. ',
     },
+
+    {
+        id: '5',
+    
+        name: 'ELFBAR 4000 pitadas',
+    
+        price: '25',
+    
+        category: 'Vapes',
+    
+        img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1696195616631.png?size=2000x2000',
+    
+        stock: '50',
+    
+        description: 'Vape descartable de 4000 pitadas, 5% nicotina, los colores dependerán del sabor elegido, contiene pin de carga para recargar la batería las veces que sean necesarias hasta que este se quede sin pitadas, no contiene cargador, entrada TIPO C. ',
+    },
+
+    {
+        id: '6',
+    
+        name: 'ELFBAR 5000 pitadas',
+    
+        price: '32',
+    
+        category: 'Vapes',
+    
+        img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1696195631584.png?size=2000x2000',
+    
+        stock: '50',
+    
+        description: 'Vape descartable de 5000 pitadas, 5% de nicotina, sus colores tornasolados dependerán del sabor elegido con una estructura de plástico transparente externa, contiene pin de carga para la recarga de la batería hasta que este se quede sin contenido ',
+    },
     
 ]
 
