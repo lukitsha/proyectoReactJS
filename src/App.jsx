@@ -21,7 +21,7 @@ const App = () => {
 
         <Routes>
           <Route path='/' element={<ItemListContainer greeting='Bienvenidos al Almacen Vitrual' /> }></Route>
-          <Route path='/item' element={<ItemDetailContainer /> }></Route>
+          <Route path='/item/:itemId' element={<ItemDetailContainer /> }></Route>
           
         </Routes>
 

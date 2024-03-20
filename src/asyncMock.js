@@ -95,6 +95,22 @@ const products = [
     
         description: 'Vape descartable de 5000 pitadas, 5% de nicotina, sus colores tornasolados dependerán del sabor elegido con una estructura de plástico transparente externa, contiene pin de carga para la recarga de la batería hasta que este se quede sin contenido ',
     },
+
+    {
+        id: '7',
+    
+        name: 'ELFBAR 10000 pitadas',
+    
+        price: '37',
+    
+        category: 'Vapes',
+    
+        img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1701142609067.png?size=2000x2000',
+    
+        stock: '50',
+    
+        description: 'Vape descartable de 10000 pitadas, 5% de nicotina, sus colores tornasolados dependerán del sabor elegido con una estructura de plástico transparente externa, contiene pin de carga para la recarga de la batería hasta que este se quede sin contenido. Incluye indicadores LED de bateria y carga restante ',
+    },
     
 ]
 

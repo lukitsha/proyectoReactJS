@@ -9,8 +9,8 @@ const Navbar = () => {
                 <h4>Navbar</h4>
                 
                 <a href="" className='btn btn-secondary'>Placas de Video</a>
-                <a href="" className='btn btn-secondary'>Mouse</a>
-                <a href="" className='btn btn-secondary'>Teclados</a>
+                <a href="" className='btn btn-secondary'>Vapes</a>
+                <a href="" className='btn btn-secondary'>Otros</a>
                 <CartWidget />
             </nav>
         </header>
