@@ -111,6 +111,22 @@ const products = [
     
         description: 'Vape descartable de 10000 pitadas, 5% de nicotina, sus colores tornasolados dependerán del sabor elegido con una estructura de plástico transparente externa, contiene pin de carga para la recarga de la batería hasta que este se quede sin contenido. Incluye indicadores LED de bateria y carga restante ',
     },
+
+    {
+        id: '8',
+    
+        name: 'IGNITE 8000 pitadas',
+    
+        price: '39',
+    
+        category: 'Vapes',
+    
+        img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1708469183685.png?size=2000x2000',
+    
+        stock: '50',
+    
+        description: 'Vape descartable de 8000 pitadas, 5% de nicotina, contiene pin de carga para la recarga de la batería hasta que este se quede sin contenido. ',
+    },
     
 ]
 
