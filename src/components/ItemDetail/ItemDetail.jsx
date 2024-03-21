@@ -1,5 +1,5 @@
 import ItemCount from "../ItemCount/ItemCount";
-import '../ItemDetail/ItemDetail.module.css'
+//import '../ItemDetail/ItemDetail.module.css'
 
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {

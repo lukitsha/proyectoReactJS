@@ -7,10 +7,10 @@ const Navbar = () => {
             
             <nav>
                 <h4>Navbar</h4>
-                
-                <a href="" className='btn btn-secondary'>Placas de Video</a>
-                <a href="" className='btn btn-secondary'>Vapes</a>
-                <a href="" className='btn btn-secondary'>Otros</a>
+                <a href="/" className='btn btn-secondary'>Home</a>
+                <a href="/Placas-de-Video" className='btn btn-secondary'>Placas de Video</a>
+                <a href="/Vapes" className='btn btn-secondary'>Vapes</a>
+                <a href="/otros" className='btn btn-secondary'>Otros</a>
                 <CartWidget />
             </nav>
         </header>
