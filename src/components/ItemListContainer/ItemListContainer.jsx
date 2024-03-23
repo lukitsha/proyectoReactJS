@@ -10,24 +10,15 @@ const ItemListContainer = ({ greeting }) => {
     const { categoryId } = useParams ()
 
     useEffect(() => {
-        if(!categoryId) {
-            getProducts()
-                .then(result => {
-                    setProducts(result)
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        } else {
-            getProductsByCategory(categoryId)
-                .then(result => {
-                    setProducts(result)
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        }
-        
+        const asyncFunc = categoryId ? getProductsByCategory : getProducts
+
+        asyncFunc(categoryId)
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }, [categoryId])
 
     console.log(products)
