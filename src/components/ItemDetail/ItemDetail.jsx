@@ -1,34 +1,33 @@
 import ItemCount from "../ItemCount/ItemCount";
-//import '../ItemDetail/ItemDetail.module.css'
-
+import styles from '../ItemDetail/ItemDetail.module.css';
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {
     return (
-        <article className="CardItem">
-            <header className="Header">
-                <h2 className="ItemHeader">
+        <article className={styles.CardItem}>
+            <header className={styles.Header}>
+                <h2 className={styles.ItemHeader}>
                     {name}
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} className="ItemImg" />
+                <img src={img} alt={name} className={styles.ItemImg} />
             </picture>
             <section>
-                <p className="Info">
+                <p className={styles.Info}>
                     Categoria: {category}
                 </p>
-                <p className="Info">
-                    Descripcíon: {description}
+                <p className={styles.Info}>
+                    Descripción: {description}
                 </p>
-                <p className="Info">
+                <p className={styles.Info}>
                     Precio: {price}
                 </p>
             </section>
-            <footer className="ItemFooter">
+            <footer className={styles.ItemFooter}>
                 <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log("Cantidad agrgada " , quantity)} />
             </footer>
         </article>
     )
 }
 
-export default ItemDetail
+export default ItemDetail;
