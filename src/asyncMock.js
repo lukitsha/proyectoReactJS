@@ -7,7 +7,7 @@ const products = [
     
         price: '950',
     
-        category: 'Placas de Video',
+        category: 'placasDeVideo',
     
         img: 'https://i.blogs.es/62bbb4/nvidiartx3080tiap/840_560.jpeg',
     
@@ -23,7 +23,7 @@ const products = [
     
         price: '1250',
     
-        category: 'Placas de Video',
+        category: 'placasDeVideo',
     
         img: 'https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4060-4060ti/geforce-rtx-4060-ti-og-1200x630.jpg',
     
@@ -39,7 +39,7 @@ const products = [
     
         price: '1600',
     
-        category: 'Placas de VIdeo',
+        category: 'placasDeVideo',
     
         img: 'https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/graphic-cards/40-series/rtx-4070-4070ti/geforce-rtx-4070-super-og-1200x630.jpg',
     
@@ -55,7 +55,7 @@ const products = [
     
         price: '2300',
     
-        category: 'Placas de Video',
+        category: 'placasDeVideo',
     
         img: 'https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg',
     
@@ -71,7 +71,7 @@ const products = [
     
         price: '25',
     
-        category: 'Vapes',
+        category: 'vapes',
     
         img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1696195616631.png?size=2000x2000',
     
@@ -87,7 +87,7 @@ const products = [
     
         price: '32',
     
-        category: 'Vapes',
+        category: 'vapes',
     
         img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1696195631584.png?size=2000x2000',
     
@@ -103,7 +103,7 @@ const products = [
     
         price: '37',
     
-        category: 'Vapes',
+        category: 'vapes',
     
         img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1701142609067.png?size=2000x2000',
     
@@ -119,7 +119,7 @@ const products = [
     
         price: '39',
     
-        category: 'Vapes',
+        category: 'vapes',
     
         img: 'https://cdn.pedix.app/znesYheacnlfROuQyIJG/products/1708469183685.png?size=2000x2000',
     

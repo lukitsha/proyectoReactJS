@@ -19,7 +19,7 @@ const App = () => {
 
         <Routes>
           <Route path='/' element={<ItemListContainer greeting='Bienvenidos al Almacen Vitrual' /> }></Route>
-          <Route path='/category/:categoryId' element={<ItemDetailContainer greeting='Listado de Productos Filtrado' /> }></Route>
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting='Listado de Productos Filtrado' /> }></Route>
           <Route path='/item/:itemId' element={<ItemDetailContainer /> }></Route>
           <Route path='*' element={ <h1>404 - NOT FOUND</h1> }></Route>
         </Routes>
