@@ -1,14 +1,15 @@
 .CardItem {
-    background-color: #3890e9;
+    background-color: #b65555;
     border: 1px solid #dee2e6;
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-right: 10px;
 }
   
 .Header {
     margin-bottom: 10px;
-}
+}       
   
 .ItemHeader {
     font-size: 1.2rem;
@@ -30,7 +31,7 @@
 }
   
 .btn:hover {
-    background-color: #212529;
+    background-color: #1ad81a;
     border-color: #212529;
 }
   
