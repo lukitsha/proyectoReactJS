@@ -1,23 +1,39 @@
 import classes from './Navbar.module.css'
 import CartWidget from '../CartWidget/CartWidget'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { QuerySnapshot, collection, getDocs } from 'firebase/firestore'
+import { db } from'../../services/firebase/firebaseConfig'
 
 const Navbar = () => {
+
+    const [categories, setCategories] = useState([])
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        const categoriesCollection = collection(db, 'categories')
+        
+
+        getDocs(categoriesCollection)
+            .then(querySnapshot => {
+                const categoriesAdapted = querySnapshot.doc.map(doc => {
+                    const data =doc.data()
+                    return{ id: doc.id, ...data}
+                })
+                setCategories(categoriesAdapted)
+            })
+            
+    }) 
+
     return (
         <header className={classes.header}>
-            
+            <h2 onClick={() => navigate('/')}>LeketsElectronics</h2>
             <nav className='NavBar'>
-                <link>
-                </link>
-                <div className='Categories'>
-                    <a href="/" className='btn btn-secondary'>Home</a>
-                    <a href="/category/placasDeVideo" className='btn btn-secondary'>Placas de Video</a>
-                    <a href="/category/vapes" className='btn btn-secondary'>Vapes</a>
-                    <a href="/category/otros" className='btn btn-secondary'>Otros</a>
-                    <CartWidget />
-                </div>
-
-                
+                <button className='btn btn-secondary'><Link to='/categories/placasDeVideo'>Placas de Video</Link></button>
+                <button className='btn btn-secondary'><Link to='/category/vapes'>Vapes</Link></button>
+                <button className='btn btn-secondary'><Link to='/category/otros'>Otros</Link> </button>
             </nav>
+            <CartWidget />
         </header>
     )
 }
