@@ -27,9 +27,9 @@ const Navbar = () => {
 
     return (
         <header className={classes.header}>
-            <h2 onClick={() => navigate('/')}>LeketsElectronics</h2>
+            <h2 onClick={() => navigate('/')} className='tituloNav'>LeketsElectronics</h2>
             <nav className='NavBar'>
-                <button className='btn btn-secondary'><Link to='/categories/placasDeVideo'>Placas de Video</Link></button>
+                <button className='btn btn-secondary'><Link to='/category/placasDeVideo'>Placas de Video</Link></button>
                 <button className='btn btn-secondary'><Link to='/category/vapes'>Vapes</Link></button>
                 <button className='btn btn-secondary'><Link to='/category/otros'>Otros</Link> </button>
             </nav>
