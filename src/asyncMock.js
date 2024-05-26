@@ -3,7 +3,7 @@ const products = [
     {
         id: '1',
     
-        name: 'RTX 3080 ti',
+        name: 'RTX 3080 TI',
     
         price: '950',
     
@@ -19,7 +19,7 @@ const products = [
     {
         id: '2',
     
-        name: 'RTX 4060 ti',
+        name: 'RTX 4060 TI',
     
         price: '1250',
     
