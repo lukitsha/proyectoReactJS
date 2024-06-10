@@ -5,13 +5,18 @@ const Navbar = () => {
     return (
         <header className={classes.header}>
             
-            <nav>
-                <h4>Navbar</h4>
+            <nav className='NavBar'>
+                <link>
+                </link>
+                <div className='Categories'>
+                    <a href="/" className='btn btn-secondary'>Home</a>
+                    <a href="/category/placasDeVideo" className='btn btn-secondary'>Placas de Video</a>
+                    <a href="/category/vapes" className='btn btn-secondary'>Vapes</a>
+                    <a href="/category/otros" className='btn btn-secondary'>Otros</a>
+                    <CartWidget />
+                </div>
+
                 
-                <a href="" className='btn btn-secondary'>Placas de Video</a>
-                <a href="" className='btn btn-secondary'>Mouse</a>
-                <a href="" className='btn btn-secondary'>Teclados</a>
-                <CartWidget />
             </nav>
         </header>
     )

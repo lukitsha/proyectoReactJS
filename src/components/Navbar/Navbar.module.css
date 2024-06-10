@@ -2,4 +2,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #333;
+  color: #fff;
+  padding: 10px 20px;   
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Categories {
+  display: flex;
+  align-items: center;
+}
+
+.Categories a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+}
+
+.Categories a:hover {
+  background-color: #555;
+  border-color: #fff;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }

@@ -1,0 +1,15 @@
+.container {
+    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #777777;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
