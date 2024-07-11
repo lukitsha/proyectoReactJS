@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const ThankYouPage = () => {
     const location = useLocation();
-    const { name, orderId } = location.state || { name: "Cliente", orderId: "N/A" };
+    const { name, orderId, email } = location.state || { name: "Cliente", orderId: "N/A", email: "correo@ejemplo.com" };
 
     return (
         <Container maxWidth="sm" sx={{ mt: 5, textAlign: 'center', bgcolor: '#f5f5f5', p: 4, borderRadius: 2, boxShadow: 3 }}>
@@ -18,7 +18,7 @@ const ThankYouPage = () => {
             </Box>
             <Box sx={{ mb: 3 }}>
                 <Typography variant="body1" gutterBottom>
-                    Tu pedido ha sido procesado con éxito. Pronto recibirás un correo electrónico con los detalles de tu compra.
+                    Tu pedido ha sido procesado con éxito. Pronto recibirás un correo electrónico en tu dirección <b>{email}</b> con los detalles de tu compra.
                 </Typography>
             </Box>
             <Button variant="contained" color="primary" component={Link} to="/" sx={{ mt: 3 }}>

@@ -26,7 +26,7 @@ const Checkout = () => {
         try {
             const docRef = await addDoc(collection(db, "orders"), order);
             console.log("Order placed with ID: ", docRef.id);
-            navigate('/thank-you', { state: { name, orderId: docRef.id } });
+            navigate('/thank-you', { state: { name, orderId: docRef.id, email } });
         } catch (e) {
             console.error("Error adding document: ", e);
         }
