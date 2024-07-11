@@ -14,12 +14,7 @@ export const CartProvider = ({ children }) => {
     };
 
     const removeItem = (id) => {
-        console.log('Eliminando producto con id:', id); // Agrega este log
-        setCart((prev) => {
-            const newCart = prev.filter((prod) => prod.id !== id);
-            console.log('Nuevo estado del carrito:', newCart); // Agrega este log
-            return newCart;
-        });
+        setCart((prev) => prev.filter((prod) => prod.id !== id));
     };
 
     const isInCart = (id) => {
@@ -27,14 +22,10 @@ export const CartProvider = ({ children }) => {
     };
 
     const getTotalQuantity = () => {
-        let acumulador = 0;
-        cart.forEach((prod) => {
-            acumulador += prod.quantity;
-        });
-        return acumulador;
+        return cart.reduce((acc, prod) => acc + prod.quantity, 0);
     };
 
-    const totalQuantity = getTotalQuantity();
+    const totalQuantity = Number(getTotalQuantity()); // Asegurarse de que es un número
 
     return (
         <CartContext.Provider value={{ cart, addItem, removeItem, totalQuantity }}>

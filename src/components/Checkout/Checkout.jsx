@@ -2,7 +2,7 @@ import { useState, useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
-import styles from "./Checkout.module.css";
+import { Container, Typography, TextField, Button, Box, Paper } from "@mui/material";
 
 const Checkout = () => {
     const { cart, totalQuantity } = useContext(CartContext)
@@ -28,48 +28,58 @@ const Checkout = () => {
     }
 
     return (
-        <div className={styles.checkoutContainer}>
-            <h1 className={styles.checkoutHeader}>Checkout</h1>
-            <form className={styles.checkoutForm} onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Nombre"
+        <Container maxWidth="md" sx={{ mt: 5 }}>
+            <Typography variant="h4" component="h1" gutterBottom align="center">
+                Checkout
+            </Typography>
+            <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                <TextField
+                    label="Nombre"
+                    variant="outlined"
+                    name="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
                 />
-                <input
+                <TextField
+                    label="Correo electrónico"
+                    variant="outlined"
+                    name="email"
                     type="email"
-                    placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-                <input
-                    type="text"
-                    placeholder="Dirección"
+                <TextField
+                    label="Dirección"
+                    variant="outlined"
+                    name="address"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                     required
                 />
-                <button type="submit">Finalizar Compra</button>
-            </form>
-            <div className={styles.summaryContainer}>
-                <h2 className={styles.summaryHeader}>Resumen de la Compra</h2>
-                <p>Total de artículos: {totalQuantity}</p>
-                <ul>
+                <Button type="submit" variant="contained" color="primary" size="large">
+                    Finalizar Compra
+                </Button>
+            </Box>
+            <Paper sx={{ mt: 4, p: 2 }}>
+                <Typography variant="h5" component="h2">
+                    Resumen de la Compra
+                </Typography>
+                <Typography variant="body1">Total de artículos: {totalQuantity}</Typography>
+                <Box component="ul" sx={{ listStyleType: "none", padding: 0 }}>
                     {cart.map(item => (
-                        <li key={item.id} className={styles.summaryItem}>
-                            <div className={styles.productDetails}>
-                                <img src={item.img} alt={item.name} className={styles.productImage} />
-                                <span>{item.name} x {item.quantity}</span>
-                            </div>
-                            <span>${item.price * item.quantity}</span>
-                        </li>
+                        <Box key={item.id} component="li" sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", p: 1, borderBottom: "1px solid #ddd" }}>
+                            <Box sx={{ display: "flex", alignItems: "center" }}>
+                                <img src={item.img} alt={item.name} style={{ width: 50, height: 50, marginRight: 16, borderRadius: 5, objectFit: "cover" }} />
+                                <Typography>{item.name} x {item.quantity}</Typography>
+                            </Box>
+                            <Typography>${item.price * item.quantity}</Typography>
+                        </Box>
                     ))}
-                </ul>
-            </div>
-        </div>
+                </Box>
+            </Paper>
+        </Container>
     )
 }
 
