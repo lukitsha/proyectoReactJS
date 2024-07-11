@@ -14,7 +14,12 @@ export const CartProvider = ({ children }) => {
     };
 
     const removeItem = (id) => {
-        setCart((prev) => prev.filter((prod) => prod.id !== id));
+        console.log('Eliminando producto con id:', id); // Agrega este log
+        setCart((prev) => {
+            const newCart = prev.filter((prod) => prod.id !== id);
+            console.log('Nuevo estado del carrito:', newCart); // Agrega este log
+            return newCart;
+        });
     };
 
     const isInCart = (id) => {

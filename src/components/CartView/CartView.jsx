@@ -15,8 +15,13 @@ const CartView = () => {
                 ) : (
                     cart.map((prod) => (
                         <article key={prod.id} className={styles.cartItem}>
-                            <h2>{prod.name}</h2>
-                            <p>Cantidad: {prod.quantity}</p>
+                            <div className={styles.cartItemDetails}>
+                                <img src={prod.img} alt={prod.name} className={styles.productImage} />
+                                <div>
+                                    <h2>{prod.name}</h2>
+                                    <p>Cantidad: {prod.quantity}</p>
+                                </div>
+                            </div>
                             <button onClick={() => removeItem(prod.id)}>Eliminar</button>
                         </article>
                     ))
