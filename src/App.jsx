@@ -1,38 +1,26 @@
-import Navbar from "./components/Navbar/Navbar"
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { CartProvider } from "./context/CartContext"
-import CartView from "./components/CartView/CartView" 
-import Checkout from "./components/Checkout/Checkout" 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import CartView from './components/CartView/CartView';
+import Checkout from './components/Checkout/Checkout';
+import { CartProvider } from './context/CartContext';
 
-const App = () => {
-  //const [page, setPage] = useState('list')
-    
-
-  return (
-    <>
-      <CartProvider>
-        <BrowserRouter>
-          <Navbar/>
-      
-
-          <Routes>
-            <Route path='/' element={<ItemListContainer greeting='Bienvenidos al Almacen Vitrual' /> }></Route>
-            <Route path='/category/:categoryId' element={<ItemListContainer greeting='Listado de Productos Filtrado' /> }></Route>
-            <Route path='/item/:itemId' element={<ItemDetailContainer /> }></Route>
-            <Route path='/cart' element={<CartView/>}></Route>
-            <Route path='/checkout' element={<Checkout/>}></Route>
-            <Route path='*' element={ <h1>404 - NOT FOUND</h1> }></Route>
-          </Routes>
-
-          
-        </BrowserRouter>
-      </CartProvider>
-      
-      
-    </>
-  )
+function App() {
+    return (
+        <CartProvider>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<ItemListContainer greeting="Bienvenidos a nuestra tienda" />} />
+                    <Route path="/category/:categoryId" element={<ItemListContainer greeting="Productos por categoría" />} />
+                    <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+                    <Route path="/cart" element={<CartView />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                </Routes>
+            </Router>
+        </CartProvider>
+    );
 }
 
-export default App
+export default App;
